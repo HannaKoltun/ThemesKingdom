@@ -1,0 +1,258 @@
+@import "./variables.scss";
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: $black;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 7px 28px 30px $black;
+    margin-bottom: 50px;
+    z-index: 5;
+
+    .header-navigation {
+        width: $max-width;
+        height: 58px;
+        // background-color: darksalmon;
+        display: flex;
+        flex-direction: row;
+
+
+        .header-navigation__logo {
+            width: 180px;
+            height: 58px;
+            // background-color: darkolivegreen;
+            color: $white;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -1px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+
+
+            .crown {
+                width: 55px;
+                height: 55px;
+                margin-left: 4px;
+            }
+        }
+    }
+
+
+    .header-navigation-link {
+        width: 450px;
+        height: 58px;
+        // background-color: rgb(94, 47, 107);
+        color: $white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 180px;
+
+        .header-navigation-link__a {
+            color: $white;
+            text-decoration: none;
+        }
+
+
+        .header-navigation-link__a_hover:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+
+    .header-navigation-button {
+        width: 270px;
+        // background-color: rgb(47, 107, 63);
+        color: $white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 100px;
+
+        .header-navigation-button__a {
+            color: $white;
+            text-decoration: none;
+        }
+
+
+        .header-navigation-button__a_hover:hover {
+            text-decoration: underline;
+        }
+
+
+
+        .header-navigation-button__btn {
+            width: 160px;
+            height: 50px;
+            background-color: $white;
+            color: $black;
+            text-align: center;
+            font-family: Montserrat;
+            letter-spacing: -1px;
+            border-radius: 100px;
+            font-size: 18px;
+            font-weight: 500;
+
+        }
+
+        .header-navigation-button__btn_hover:hover {
+            background-color: $black;
+            color: $white;
+            border: 3px solid $white;
+        }
+    }
+
+
+
+
+
+
+    @media screen and (max-width:1235px) {
+
+        .header-navigation {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .header-navigation__logo {
+            width: 100px;
+            height: 40px;
+            font-size: 14px;
+        }
+
+        .header-navigation-link {
+            width: 405px;
+            height: 58px;
+            font-size: 18px;
+            margin-left: 0px;
+
+
+            .header-navigation-link__a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+
+        .header-navigation-button {
+            width: 200px;
+            font-size: 18px;
+            margin-left: 0px;
+
+            .header-navigation-button__btn {
+                width: 120px;
+                height: 45px;
+                background-color: $white;
+                color: $black;
+                text-align: center;
+                font-family: Montserrat;
+                letter-spacing: -1px;
+                border-radius: 100px;
+                font-size: 16px;
+                font-weight: 500;
+
+            }
+        }
+
+    }
+    .header-navigation-mini {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:930px) {
+
+    .header {
+        height: 55px;
+
+        .header-navigation{
+            display: none;
+        }
+
+        .header-navigation-mini {
+            width: 100%;
+            height: 58px;
+            // background-color: darksalmon;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .header-navigation__left {
+                width: $min-width;
+                height: 58px;
+                // background-color: cyan;
+
+                .crown {
+                    width: 55px;
+                    height: 55px;
+                    margin-left: 4px;
+                }
+            }
+
+            .header-navigation__right {
+                width: 50px;
+                height: 58px;
+                // background-color: aquamarine;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .line {
+                margin-bottom: 6px;
+                width: 30px;
+                height: 2px;
+                background-color: $white;
+            }
+        }
+
+
+
+
+        .header-navigation__logo {
+            width: 75px;
+            height: 40px;
+            // background-color: darkolivegreen;
+            font-size: 12px;
+            letter-spacing: -1px;
+
+
+            .crown {
+                width: 30px;
+                height: 30px;
+                margin-left: 0px;
+            }
+        }
+
+    }
+}

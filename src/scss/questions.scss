@@ -1,0 +1,218 @@
+.questions {
+    width: 100%;
+    height: 1010px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+
+    .questions-container {
+        width: 1170px;
+        height: 1010px;
+        // background-color: blanchedalmond;
+        display: flex;
+        flex-direction: column;
+
+
+        .questions-container__text {
+            width: 1170px;
+            height: 330px;
+            font-family: Raleway;
+            letter-spacing: -20px;
+            font-size: 300px;
+            font-weight: 500;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+
+
+        .accordion-item {
+            border: none;
+
+            .accordion-button {
+                color: rgb(0, 0, 0);
+                font-family: Montserrat;
+                letter-spacing: -1px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .accordion-button_focus:focus {
+                background-color: white !important;
+                box-shadow: none !important;
+            }
+
+            .accordion-button_active {
+                background-color: white !important;
+            }
+
+
+            .accordion-body {
+                color: rgb(0, 0, 0);
+                font-family: Montserrat;
+                letter-spacing: -1px;
+                font-size: 13px;
+                font-weight: 500;
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1235px) {
+
+    .questions {
+        width: 100%;
+        height: 945px;
+
+        .questions-container {
+            width: 900px;
+            height: 945px;
+            // background-color: blanchedalmond;
+            margin-bottom: 20px;
+
+
+            .questions-container__text {
+                width: 900px;
+                height: 215px;
+                font-size: 200px;
+                margin-bottom: 20px;
+            }
+
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width:930px) {
+.questions {
+    width: 100%;
+    height: 1010px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+
+    .questions-container {
+        width: 500px;
+        height: 1010px;
+        // background-color: blanchedalmond;
+        display: flex;
+        flex-direction: column;
+
+
+        .questions-container__text {
+            letter-spacing: -10px;
+            color: #000;
+            width: 496px;
+            height: 105px;
+            margin-bottom: 25px;
+            font-family: Raleway;
+            font-size: 105px;
+            font-weight: 500;
+        }
+
+
+
+
+        .accordion-item {
+            border: none;
+
+            .accordion-button {
+                color: rgb(0, 0, 0);
+                font-family: Montserrat;
+                letter-spacing: -1px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .accordion-button_focus:focus {
+                background-color: white !important;
+                box-shadow: none !important;
+            }
+
+            .accordion-button_active {
+                background-color: white !important;
+            }
+
+
+            .accordion-body {
+                color: rgb(0, 0, 0);
+                font-family: Montserrat;
+                letter-spacing: -1px;
+                font-size: 13px;
+                font-weight: 500;
+
+            }
+        }
+    }
+}
+
+}
+
+
+@media screen and (max-width:530px) {
+    .questions {
+        width: 100%;
+        height: 885px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+    
+        .questions-container {
+            width: 250px;
+            height: 885px;
+            // background-color: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+    
+    
+            .questions-container__text {
+                letter-spacing: -10px;
+                color: #000;
+                width: 250px;
+                height: 105px;
+                margin-bottom: 25px;
+                font-family: Raleway;
+                font-size: 105px;
+                font-weight: 500;
+            }
+    
+
+    
+            .accordion-item {
+                border: none;
+    
+                .accordion-button {
+                    color: rgb(0, 0, 0);
+                    font-family: Montserrat;
+                    letter-spacing: -0.5px;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+    
+                .accordion-button_focus:focus {
+                    background-color: white !important;
+                    box-shadow: none !important;
+                }
+    
+                .accordion-button_active {
+                    background-color: white !important;
+                }
+    
+    
+                .accordion-body {
+                    color: rgb(0, 0, 0);
+                    font-family: Montserrat;
+                    letter-spacing: 0px;
+                    font-size: 7px;
+                    font-weight: 500;
+    
+                }
+            }
+        }
+    }
+    
+    }
